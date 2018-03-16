@@ -83,4 +83,8 @@
     Font = Font["+3"]
     Text = (" ")
   }
+  { ResetButton Button
+    MoveScaled(48,32,13,7)
+    Text = ("Reset Button")
+  }
 }

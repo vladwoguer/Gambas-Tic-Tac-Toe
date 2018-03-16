@@ -10,6 +10,11 @@ Private board As New Integer[3, 3]
 Private moveCount As Integer
 
 Public Sub Form_Open()
+  Initialize
+End
+
+Private Sub Initialize()
+  
   Dim i As Integer
   Dim j As Integer
   moveCount = 0
@@ -24,13 +29,19 @@ Public Sub Form_Open()
   buttons[2, 0] = Button7
   buttons[2, 1] = Button8
   buttons[2, 2] = Button9
+  
+  WinnerLabel.Text = ""
 
   For i = 0 To 2 Step 1
     For j = 0 To 2 Step 1
       board[j, i] = -1
+      buttons[i, j].Text = " "
+      buttons[i, j].Enabled = True
     Next
   Next
+  
 End
+
 
 Private Sub ChangeTurn()
   turn = Not turn
@@ -74,11 +85,15 @@ Private Sub Mark_Place(button_clicked As Button)
 End
 
 Private Sub DeclareVictory(turn As Boolean)
-  WinnerLabel.Text = ConvertTurnToLabel(turn)
+  Dim winner As String
+  winner = ConvertTurnToLabel(turn)
+  WinnerLabel.Text = winner
+  Message.Info("Winner: " & winner, "OK")
 End
 
 Private Sub DeclareDraw()
   WinnerLabel.Text = "Draw"
+  Message.Info("Draw", "OK")
 End
 
 
@@ -208,4 +223,8 @@ End
 
 Public Sub Button9_Click()
   Mark_Place(Button9)
+End
+
+Public Sub ResetButton_Click()
+  Initialize
 End
