@@ -1,0 +1,7 @@
+The Tic Tac Toe Game Version 1.0.0
+Features:
+-Tic Tac Toe Board
+-Turn indicator
+-Reset Game
+-Winner Alert
+-Winner Indicator
