@@ -1,0 +1,12 @@
+[DebugWindow]
+Count=0
+
+[DebugWindow/Button1]
+Geometry=[65,24,256,320]
+
+[Executable]
+Path="/home/vladwoguer/Documents/tictactoe/tictactoe-1.0.0.gambas"
+
+[Watches]
+Count=0
+

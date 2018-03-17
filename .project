@@ -1,10 +1,26 @@
 # Gambas Project File 3.0
+# Compiled with Gambas 3.8.4
 Title=tictactoe
 Startup=FMain
-Version=0.0.1
+Version=1.0.1
 Component=gb.image
 Component=gb.gui
 Component=gb.form
+Description="A simple Tic Tac Toe Game to play with your friends."
+Authors="Vladwoguer Bezerra(https://github.com/vladwoguer)"
 TabSize=2
 Language=en_US
+Maintainer=vladwoguer
+Vendor=VladwoguerBezerra
+Address=vladwoguer@vladwoguer-Z450LA
+License=General Public License
+PackageName=tictactoe-1.0.1
 Packager=1
+Systems=debian
+Menus=debian:"Games/Board"
+Groups=debian:"games"
+Tags=2DGraphics,ArcadeGame,KidsGame
+Dependencies=
+GambasVersion=3.8
+WebSite=https://github.com/vladwoguer/Gambas-Tic-Tac-Toe
+CreateMenu=1

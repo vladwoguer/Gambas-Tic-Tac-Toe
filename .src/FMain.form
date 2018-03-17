@@ -87,4 +87,8 @@
     MoveScaled(48,32,13,7)
     Text = ("Reset Button")
   }
+  { TextLabel3 TextLabel
+    MoveScaled(36,51,25,2)
+    Text = ("By Vladwoguer Bezerra")
+  }
 }
